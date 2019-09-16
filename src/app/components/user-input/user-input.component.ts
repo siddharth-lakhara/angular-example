@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-input.component.css']
 })
 export class UserInputComponent implements OnInit {
-
+  public isDisabled = true;
+  public name = '';
+  public name2 = '';
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleInputToggle() {
+    this.isDisabled = !this.isDisabled;
+  }
+
+  handleInputChange(value: string) {
+    this.name = value;
   }
 
 }
