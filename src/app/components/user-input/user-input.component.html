@@ -1,16 +1,18 @@
 <h2>Example 1: User input</h2>
-<div class="example-1-1">
-  <h3>Example 1.1 = Disabling input on button click</h3>
-  <input [disabled]="isDisabled" value="Siddharth" /><br />
-  <button (click)="handleInputToggle()">Toogle input disability</button>
-</div>
-<div class="example-1-2">
-  <h3>Example 1.2 = Update a variable based on input value</h3>
-  <input [value]="name" (input)="handleInputChange($event.target.value)"/><br />
-  Value of input text: {{name}}
-</div>
-<div class="example-1-3">
-  <h3>Example 1.3 = Two way data binding</h3>
-  <input [(ngModel)]="name2" /><br />
-  Value of input text: {{name2}}
+<div class="example-wrapper">
+  <div class="example-1-1">
+    <h3>Example 1.1 = Disabling input on button click</h3>
+    <input [disabled]="isDisabled" value="Siddharth" /><br />
+    <button (click)="handleInputToggle()">Toogle input disability</button>
+  </div>
+  <div class="example-1-2">
+    <h3>Example 1.2 = Update a variable based on input value</h3>
+    <input [value]="name" (input)="handleInputChange($event.target.value)"/><br />
+    Value of input text: {{name}}
+  </div>
+  <div class="example-1-3">
+    <h3>Example 1.3 = Two way data binding</h3>
+    <input [(ngModel)]="name2" /><br />
+    Value of input text: {{name2}}
+  </div>
 </div>

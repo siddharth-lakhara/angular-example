@@ -1,0 +1,13 @@
+<h2>Example 2: Conditional application of classes ng-class</h2>
+<div class="example-wrapper">
+  <div class="example-2-1">
+    <h3>Example 2.1 = change class name on click</h3>
+    The following example has default class 'A', on clicking it will toggle to 'B'<br/>
+    <div [ngClass]="className">Some sample text</div>
+    <button (click)="toggleClassName()">Toggle class</button>
+  </div>
+  <div class="example-2-2">
+    <h3>Example 2.2 = Set multiple classes</h3>
+    <div [ngClass]="multipleClassesObject">This text has multiple classes</div>
+  </div>
+</div>
