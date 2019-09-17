@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { UserInputComponent } from './components/user-input/user-input.component';
 import { ConditionalClassesComponent } from './components/conditional-classes/conditional-classes.component';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserInputComponent,
     ConditionalClassesComponent,
-    NgIfComponent
+    NgIfComponent,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule,

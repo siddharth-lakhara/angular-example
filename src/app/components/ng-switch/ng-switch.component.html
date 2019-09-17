@@ -1,0 +1,18 @@
+<h2>Example 4: Ng switch</h2>
+<div class="example-wrapper">
+  <div class="example-4-1">
+    <h3>Example 4.1 = Conditionally show an element</h3>
+    <button (click)="updateSelection(1)">1</button>
+    <button (click)="updateSelection(2)">2</button>
+    <button (click)="updateSelection(3)">3</button>
+    <button (click)="updateSelection(100)">Default case</button>
+    <!-- <br/> -->
+    <div [ngSwitch]="currentSelection">
+      <div *ngSwitchCase="1">You have selected 1</div>
+      <div *ngSwitchCase="2">You have selected 2</div>
+      <div *ngSwitchCase="3">You have selected 3</div>
+      <div *ngSwitchDefault>Default case triggered</div>  
+    </div>
+  </div>
+
+</div>
