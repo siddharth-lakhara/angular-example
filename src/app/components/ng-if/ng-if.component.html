@@ -1,0 +1,19 @@
+<h2>Example 3: Ng if</h2>
+<div class="example-wrapper">
+  <div class="example-3-1">
+    <h3>Example 3.1 = Conditionally show an element</h3>
+    <div *ngIf="shouldShowElement; then showElement; else dontShowElement" ></div>
+
+    <ng-template #showElement>
+      <div>Some text</div>
+      <div>The element is now visible</div>
+    </ng-template>
+
+    <ng-template #dontShowElement>
+      <div>The element is now hidden</div>
+    </ng-template>
+
+    <button (click)="toggleVisibility()">Toggle visibility</button>
+  </div>
+  
+</div>

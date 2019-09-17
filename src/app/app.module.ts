@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserInputComponent } from './components/user-input/user-input.component';
 import { ConditionalClassesComponent } from './components/conditional-classes/conditional-classes.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserInputComponent,
-    ConditionalClassesComponent
+    ConditionalClassesComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,
