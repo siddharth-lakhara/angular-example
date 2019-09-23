@@ -1,0 +1,38 @@
+<h2>Example 4: Ng for</h2>
+<div class="example-wrapper">
+  <div class="example-4-1">
+    <h3>Example 4.1 = Render list of colors using ng for</h3>
+    <div *ngFor="let color of colors; index as i">
+      <li><div>{{color}}, with index {{i}}</div></li>
+    </div>
+  </div>
+
+  <div class="example-4-2">
+    <h3>Example 4.2 = Render list with condition -> tell whether current element is first element</h3>
+    <div *ngFor="let color of colors; first as f">
+      <li>
+        <div>{{color}}, isFirstElement? = {{f}}</div>
+      </li>
+    </div>
+  </div>
+
+  <div class="example-4-3">
+    <h3>Example 4.3 = Render list with condition -> tell whether current element is last element</h3>
+    <div *ngFor="let color of colors; last as l">
+      <li>
+        <div>{{color}}, isLastElement? = {{l}}</div>
+      </li>
+    </div>
+  </div>
+
+  <div class="example-4-4">
+    <h3>Example 4.3 = Render list with odd and even element indication</h3>
+    <div *ngFor="let color of colors; odd as o; even as e">
+      <li>
+        <div>{{color}}, isOddElement? = {{o}}, isEvenElement? = {{e}}</div>
+      </li>
+    </div>
+  </div>
+
+</div>
+
